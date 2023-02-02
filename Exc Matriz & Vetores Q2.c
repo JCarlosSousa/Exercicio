@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 //2. Aloque dinamicamente uma matriz de inteiros 3x3 e preencha cada elemento da matriz com o seu
-respectivo ´ındice (matriz[i][j] = i*3 + j). Em seguida, imprima a matriz.
+respectivo índice (matriz[i][j] = i*3 + j). Em seguida, imprima a matriz.
 
 int main(void){
     int linhas = 3, colunas = 3;
