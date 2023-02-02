@@ -11,24 +11,29 @@ int main(void){
     	printf("Erro! Sem memória");
     	exit(1);
 	}
+	
     int linha;
     for(linha =0; linha < linhas; linha++){
     	matriz[linha] = (int*) malloc(colunas*sizeof(int));
 	}
+	
 	int i, j;
 	for(i = 0; i < linhas; i++){
 		for(j = 0; j < colunas; j++){
 			matriz[i][j] = i * 3 + j;
 		}
 	}
+	
 	for(i = 0; i < linhas; i++){
 		for(j = 0; j < colunas; j++){
 			printf("\n Matriz[%d][%d] = %d\n", i, j, matriz[i][j]);
 		}
 	}
+	
 	for(linha = 0; linha < linhas; linha++){
 		free(matriz[linha]);
 	}
+	
 	free(matriz);
 	return 0;
 }
