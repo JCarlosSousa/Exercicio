@@ -14,11 +14,9 @@ int main(void){
     for (i = 0; i < tamanho; i++){
 	vetor[i] = i; 
     }
-
     for(i = 0; i < tamanho; i++){
     printf("%d\t", vetor[i]);
     }
-
     free (vetor);
     return(0);
 }
