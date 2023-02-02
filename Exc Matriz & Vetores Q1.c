@@ -11,12 +11,15 @@ int main(void){
 	printf("Erro! Sem memória");
 	exit(1);
     }
+	
     for (i = 0; i < tamanho; i++){
 	vetor[i] = i; 
     }
+	
     for(i = 0; i < tamanho; i++){
     printf("%d\t", vetor[i]);
     }
+	
     free (vetor);
     return(0);
 }
