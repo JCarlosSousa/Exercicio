@@ -9,9 +9,9 @@ int main(void){
 	int quantidade;
 	printf("Digite a quantidade de frutas: ");
 	scanf("%d", &quantidade);
-    char **frutas = (char**) malloc(quantidade*sizeof(char*));
-    if(frutas == NULL){
-    	exit(1);
+    	char **frutas = (char**) malloc(quantidade*sizeof(char*));
+    	if(frutas == NULL){
+    		exit(1);
 	}
 	
 	int linha, coluna;
@@ -32,6 +32,11 @@ int main(void){
 		printf("Informe o valor da fruta: \n");
 		scanf("%f", &preco[linha]);	
 	}
+	
+	int nova_quantidade;
+	prinft("Digite a nova quantidade de frutas: ");
+	scanf("%d", &nova_quantidade);
+	char **frutas = (char*) realloc(**frutas, nova_quantidade*sizeof(char*));
 	
 	for(linha = 0; linha < quantidade; linha++){
 		free(frutas[linha]);
