@@ -31,7 +31,7 @@ int main (void){
         printf("Digite o identificador do funcionario: "); //Socilitando o identificador do funcionario
         scanf("%d", &vetor_funcionario[index].identificador);
         printf("Digite o cargo do funcionario: "); //Solicitando o cargo do funcionario
-        scanf(" [^\n]s", vetor_funcionario.cargo);
+        scanf(" [^\n]s", vetor_funcionario->cargo);
 
     for (index = 0; index < qnt_funcionarios; index++){ //Imprimindo todos os dados do funcionario da empresa
         printf("Nome do funcionario: [^\n]s", vetor_funcionario[index].nome);
