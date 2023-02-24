@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//1. Aloque dinamicamente um vetor de inteiros de tamanho 10 e preencha cada elemento do vetor com 
-//o seu respectivo índice (vetor[i] = i). Em seguida, imprima o vetor.
+/*1. Aloque dinamicamente um vetor de inteiros de tamanho 10 e preencha cada elemento do vetor com 
+o seu respectivo índice (vetor[i] = i). Em seguida, imprima o vetor.*/
 
 int main(void){
     int tamanho = 10, i;
